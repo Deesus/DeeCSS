@@ -1,0 +1,104 @@
+/*******************
+ Author: Dee Reddy (deesus@yandex.com)
+ *******************/
+
+/* reset everything */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*******************
+ Grid system:
+ *******************/
+/*  TODO: make grid responsive */
+
+/* removes default padding behavior - set width remains same despite padding, borders: */
+*, ::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* fixes parent element collapsing to 0 */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class ^= 'col-'] {
+    float: left;
+    padding-right: 20px;
+    min-height: 1px;
+    min-width: 1px;
+}
+
+.grid [class ^= 'col-']:last-of-type {      /* rempve `.grid */
+    padding-right: 0;
+}
+
+/* 12-space widths: */
+.col-1 {width: 8.3333%;}
+
+.col-2 {width: 16.6667%;}
+
+.col-3 {width: 25%;}
+
+.col-4 {width: 33.3333%;}
+
+.col-5 {width: 41.6667%;}
+
+.col-6 {width: 50%;}
+
+.col-7 {width: 58.3333%;}
+
+.col-8 {width: 66.6667%;}
+
+.col-9 {width: 75%;}
+
+.col-10 {width: 83.3333%;}
+
+.col-11 {width: 91.6667%;}
+
+.col-12 {width: 100%;}
+
+/*******************
+ Major sections
+ *******************/
+header {
+}
+
+main {
+}
+
+footer {
+}
+
+/*******************
+ Minor sections
+ *******************/
+
+.menu-item {
+    transition: 0.5s ease;
+    background-color: #dcdcdc;
+    color: #02354d;
+}
+
+.menu-item:hover {
+    transition: 0.5s ease;
+    background-color: #b6c2c7;
+}
+
+/*******************
+ Attributes
+ *******************/
+
+.text-center {
+    text-align: center;
+}
+
+/*******************
+ Buttons
+ *******************/
+ 
