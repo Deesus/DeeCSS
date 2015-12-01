@@ -40,55 +40,18 @@
 
 /* 12-space widths: */
 .col-1 {width: 8.3333%;}
-
 .col-2 {width: 16.6667%;}
-
 .col-3 {width: 25%;}
-
 .col-4 {width: 33.3333%;}
-
 .col-5 {width: 41.6667%;}
-
 .col-6 {width: 50%;}
-
 .col-7 {width: 58.3333%;}
-
 .col-8 {width: 66.6667%;}
-
 .col-9 {width: 75%;}
-
 .col-10 {width: 83.3333%;}
-
 .col-11 {width: 91.6667%;}
-
 .col-12 {width: 100%;}
 
-/*******************
- Major sections
- *******************/
-header {
-}
-
-main {
-}
-
-footer {
-}
-
-/*******************
- Minor sections
- *******************/
-
-.menu-item {
-    transition: 0.5s ease;
-    background-color: #dcdcdc;
-    color: #02354d;
-}
-
-.menu-item:hover {
-    transition: 0.5s ease;
-    background-color: #b6c2c7;
-}
 
 /*******************
  Attributes
@@ -96,6 +59,13 @@ footer {
 
 .text-center {
     text-align: center;
+}
+
+/* space child divs equally (but won't change the size divs): */
+/* TODO: N.b. flex-box is not supported on older browsers */
+.equally-space-divs {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*******************
