@@ -1,4 +1,4 @@
-## DeeCSS 0.1.0
+## DeeCSS 0.1.1
 ###### An efficient CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was created from scratch. Main goals: everything should be responsive/fluid; should have a low learning curve; should use only things you actually need.
@@ -19,5 +19,5 @@ My custom CSS with the intention of replacing Bootstrap. This project was create
 - Add support for mobile and touchpads
 - Add test/example HTML (instead of just boilerplate template)
 
-##### License
+#### License
 Copyright (c) 2015 Dee Reddy. Apache 2 License.

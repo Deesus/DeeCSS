@@ -158,9 +158,9 @@ body {
     align-items: center;
 }
 
-/* container makes all child divs equal in width
-   (but content inside divs can overflow if too long) */
-.equal-width-divs > div {
+/* container makes any/all child items equal in width
+   (but content inside items can overflow if too long) */
+.equal-width-divs > * {
     /* TODO: Is using flex better than simply using `width: 100%;`? */
     -webkit-flex: 1;
     -ms-flex: 1;
