@@ -146,9 +146,16 @@ body {
 /*******************
  Attributes
  *******************/
+/* horizontally align items inside a container: */
+.h-center {
+    display: flex;
+    justify-content: center;
+}
 
-.text-center {
-    text-align: center;
+/* vertically align items inside a container: */
+.v-center {
+    display: flex;
+    align-items: center;
 }
 
 /* container makes all child divs equal in width
@@ -167,8 +174,13 @@ body {
     justify-content: space-between;
 }
 
-
+/*  in certain cases, when we want to equally space items inside a column,
+    `equally-spaced-content` and `equal-width-divs` won't work -- this resets the display.
+    TODO: can't we just put this inside `equally-spaced-content` and `equal-width-divs`? */
+.reset {
+	display: flex;      /* TODO: do we need to support others (e.g. -web-kit, -ms-flex, etc.)? */
+	width: 100%
+}
 /*******************
  Buttons
  *******************/
- 
