@@ -18,6 +18,7 @@ My custom CSS with the intention of replacing Bootstrap. This project was create
 - Customize grid classes for different screen sizes (i.e. small, medium, large screens)
 - Add support for mobile and touchpads
 - Add test/example HTML (instead of just boilerplate template)
+- Add wrapping of sections when window is resized -- c.f. Bootstrap, Heroku, or Tumblr
 
 #### License
 Copyright (c) 2015 Dee Reddy. Apache 2 License.
