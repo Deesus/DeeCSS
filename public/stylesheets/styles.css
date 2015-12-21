@@ -23,10 +23,15 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /**************
  Grid System
  **************/
-
+/* NOTE: images inside columns must be wrapped in separate div to prevent vertical stretching */
 .row {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -191,8 +196,28 @@ body {
     -webkit-box-orient: vertical;
 }
 
+/* use `.align-bottom` in conjunction w/ `.align-bottom-container` */
+.align-bottom-container {
+    display: flex;
+    height: 100%;           /* This height property takes up its parent size (e.g. 197px from header) */
+}
+
 .align-bottom {
+    width: 100%;
     align-self: flex-end;
+}
+
+/*******************
+ Misc
+ *******************/
+
+img {
+    /* image automatically resizes to max-width of the boundary: */
+    max-width: 100%;
+    height: auto;
+
+    /* removes the extra space on bottom of a div that contains an image: */
+    display: block;
 }
 
 /*******************
