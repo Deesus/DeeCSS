@@ -34,4 +34,4 @@ Main goals: design should be veritably responsive; should have a low learning cu
     + [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
 
 #### License
-Copyright (c) 2015 Dee Reddy. Apache 2 License.
+Copyright (c) 2016 Dee Reddy. Apache 2 License.
