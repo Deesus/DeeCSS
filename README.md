@@ -11,14 +11,16 @@ My custom CSS with the intention of replacing Bootstrap. This project was create
 
 #### TODO:
 
-- Add CSS buttons
-- Improve README
-- Add API documentation
-- Add custom attributes
-- Customize grid classes for different screen sizes (i.e. small, medium, large screens)
-- Add support for mobile and touchpads
-- Add test/example HTML (instead of just boilerplate template)
-- Add wrapping of sections when window is resized -- c.f. Bootstrap, Heroku, or Tumblr
++ [ ] Consolidate Sass
++ [ ] Boilerplate should include sticky footer wrapper and CSS
++ [ ] Add CSS buttons
++ [ ] Improve README
++ [ ] Add API documentation
++ [ ] Add custom attributes
++ [ ] Customize grid classes (e.g. "lg-4" or "sm-4") for different screen sizes (i.e. small, medium, large screens)
++ [ ] Make adaptive (desktop, mobile, touchpad versions)
++ [ ] Add test/example HTML (instead of just boilerplate template)
++ [ ] Make responsive to screen size -- c.f. Bootstrap, Heroku, or Tumblr
 
 #### License
 Copyright (c) 2015 Dee Reddy. Apache 2 License.
