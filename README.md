@@ -10,16 +10,33 @@ Main goals: design should be veritably responsive; should have a low learning cu
 - HTML starter template
 - Class selectors to solve common design tasks
 
+#### File Structure:
+```
+DeeCSS/
+    ├── README
+    ├── LICENSE
+    ├── public/
+    │    ├── index.html
+    │    ├── stylesheets/
+    │    │    └── styles.css
+    │    └── scripts/
+    │          └── scripts.js
+    └── Sass/
+          ├── styles.css
+          ├── styles.css.map
+          └── styles.scss
+```
+
 #### TODO:
 
 - **Refactor**:
-    + [ ] Consolidate Sass
+    + [x] Consolidate Sass
     + [ ] Boilerplate should include sticky footer wrapper and CSS
     + [ ] Separate menus, buttons, etc. into different CSS and different partials
 - **Documentation**:
     + [ ] Improve README
     + [ ] Add API documentation
-    + [ ] Show file structure
+    + [X] Show file structure
     + [ ] Add showcase/example HTML (instead of just boilerplate template)
 - **Functionality**:
     + [ ] Add CSS buttons
