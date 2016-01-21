@@ -13,8 +13,7 @@ Main goals: design should be veritably responsive; should have a low learning cu
 #### File Structure:
 ```
 DeeCSS/
-    ├── README
-    ├── LICENSE
+    ├── README.md
     ├── public/
     │    ├── index.html
     │    ├── stylesheets/
@@ -51,4 +50,4 @@ DeeCSS/
     + [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
 
 #### License
-Copyright (c) 2016 Dee Reddy. Apache 2 License.
+Copyright (c) 2016 Dee Reddy.
