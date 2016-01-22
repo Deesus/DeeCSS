@@ -1,4 +1,4 @@
-## FF - FlexFramework 0.2.0
+## FF - FlexFramework 0.2.1
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was created from scratch. 
@@ -7,7 +7,7 @@ Main goals: design should be veritably responsive; should have a low learning cu
 #### Features:
 
 - A fluid CSS grid system
-- HTML starter template
+- HTML boilerplate
 - Class selectors to solve common design tasks
 
 #### File Structure:
@@ -30,8 +30,7 @@ DeeCSS/
 
 - **Refactor**:
     + [x] Consolidate Sass
-        + [ ] consolidate `-webkit-box-orient` with `flex-direction` 
-            E.g. `$direction == 'column' ? $box-orient = 'vertical'`) -- or case select, in case we call with `vertical` as argument
+        + [ ] Find a way to consolidate `-webkit-box` inside mixins. Possibly create separate mixins specifically for -webkit-box?
     + [ ] Boilerplate should include sticky footer wrapper and CSS
     + [ ] Separate menus, buttons, etc. into different CSS and different partials
 - **Documentation**:
@@ -50,6 +49,8 @@ DeeCSS/
     + [ ] Make responsive to screen size -- c.f. Bootstrap, Heroku, or Tumblr
     + [ ] C.f. Gumby, Skeleton, and Pure frameworks for additional implementation ideas
     + [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
+- **Misc.**
+    + [ ] Move `img` styling to 'Default Styles' section
 
 #### License
 Copyright (c) 2016 Dee Reddy.

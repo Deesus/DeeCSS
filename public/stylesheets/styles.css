@@ -4,6 +4,7 @@
 /**************
  Resets
  **************/
+/* TODO: create own resets (as separate file) */
 * {
     margin: 0;
     padding: 0; }
@@ -35,7 +36,7 @@ a {
     -ms-flex: 0 1 auto;
     -webkit-box-flex: 0;
     flex: 0 1 auto;
-    /* short for flex-direction flex-wrap */
+    /* flex-flow */
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -136,8 +137,7 @@ a {
     display: flex;
     align-items: center; }
 
-/* container makes any/all child items equal in width
-   (but content inside items can overflow if too long) */
+/* container makes any/all child items equal in width (but content inside items can overflow if too long) */
 .equal-width-divs > * {
     /* TODO: Is using flex better than simply using `width: 100%;`? */
     -webkit-flex: 1;
@@ -154,8 +154,10 @@ a {
     `equally-spaced-content` and `equal-width-divs` won't work -- this resets the display.
     TODO: can't we just put this inside `equally-spaced-content` and `equal-width-divs`? */
 .reset {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    /* TODO: do we need to support others (e.g. -web-kit, -ms-flex, etc.)? */
     width: 100%; }
 
 /* child items are aligned in a column */
@@ -168,6 +170,9 @@ a {
 
 /* use `.align-bottom` in conjunction w/ `.align-bottom-container` */
 .align-bottom-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     height: 100%;
     /* This height property takes up its parent size (e.g. 197px from header) */ }
@@ -183,7 +188,6 @@ img {
     /* image automatically resizes to max-width of the boundary: */
     max-width: 100%;
     height: auto;
-    /* removes the extra space on bottom of a div that contains an image: */
     display: block; }
 
 /*******************
@@ -191,4 +195,7 @@ img {
  *******************/
 /*******************
  Menus
+ *******************/
+/*******************
+ Default Styles
  *******************/

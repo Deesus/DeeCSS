@@ -6,11 +6,31 @@
 //      Sass Functions      //
 //////////////////////////////
 
-@mixin flex-shorthand($flex-grow, $flex-shrink, $flex-basis) {
-  -webkit-flex:     $flex-grow $flex-shrink $flex-basis;
-  -ms-flex:         $flex-grow $flex-shrink $flex-basis;
-  -webkit-box-flex: $flex-grow $flex-shrink $flex-basis;     // UNTESTED: changed from `-webkit-box-flex: $flex-grow`
-  flex:             $flex-grow $flex-shrink $flex-basis;
+// args: grow, shrink, basis
+@mixin flex($args...) {
+
+  $value: null;
+  @if length($args) == 1 {
+    $value: $args;
+  }
+  @else if length($args) == 2 {
+    $value: nth($args, 1) nth($args, 2);
+  }
+  @else if length($args) == 3 {
+    $value: nth($args, 1) nth($args, 2) nth($args, 3);
+  }
+
+  -webkit-flex:     $value;
+  -ms-flex:         $value;
+  -webkit-box-flex: nth($args, 1);
+  flex:             $value;
+}
+
+// flex-flow is shorthand for flex-direction, flex-wrap
+@mixin flex-flow($direction, $wrap) {
+  -webkit-flex-flow: $direction $wrap;
+  -ms-flex-flow: $direction $wrap;
+  flex-flow: $direction $wrap;
 }
 
 @mixin flex-direction($direction) {
@@ -61,20 +81,17 @@ a {
   @include display-as-flex;
 
   /* reset flex */
-  @include flex-shorthand(0, 1, auto);
+  @include flex(0, 1, auto);
 
-  /* short for flex-direction flex-wrap */
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-
+  /* flex-flow */
+  @include flex-flow(row, wrap);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 [class ^= 'col-'] {
   /* reset flex -- don't readjust width of columns */
-  @include flex-shorthand(0, 0, auto);
+  @include flex(0, 0, auto);
 
   /* display as flex */
   display: flex;
@@ -104,14 +121,10 @@ a {
   align-items: center;
 }
 
-/* container makes any/all child items equal in width
-   (but content inside items can overflow if too long) */
+/* container makes any/all child items equal in width (but content inside items can overflow if too long) */
 .equal-width-divs > * {
   /* TODO: Is using flex better than simply using `width: 100%;`? */
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  -webkit-box-flex: 1;
-  flex: 1;
+  @include flex(1);
 }
 
 /* container spaces all child content equally
@@ -166,3 +179,8 @@ img {
 /*******************
  Menus
  *******************/
+
+/*******************
+ Default Styles
+ *******************/
+// TODO: set defaults for link color, font-family, header font, sizes, etc.
