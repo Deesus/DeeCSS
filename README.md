@@ -6,7 +6,8 @@ Main goals: design should be veritably responsive; should have a low learning cu
 
 #### Features:
 
-- A fluid CSS grid system
+- Flexbox CSS grid system
+- Flexbox sticky footer
 - HTML boilerplate
 - Class selectors to solve common design tasks
 
