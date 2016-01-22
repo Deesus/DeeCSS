@@ -1,5 +1,5 @@
-## DeeCSS 0.1.1
-###### An efficient CSS-HTML framework
+## FF - FlexFramework 0.2.0
+###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was created from scratch. 
 Main goals: design should be veritably responsive; should have a low learning curve; should solve common design issues.
