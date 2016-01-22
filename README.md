@@ -30,6 +30,8 @@ DeeCSS/
 
 - **Refactor**:
     + [x] Consolidate Sass
+        + [ ] consolidate `-webkit-box-orient` with `flex-direction` 
+            E.g. `$direction == 'column' ? $box-orient = 'vertical'`) -- or case select, in case we call with `vertical` as argument
     + [ ] Boilerplate should include sticky footer wrapper and CSS
     + [ ] Separate menus, buttons, etc. into different CSS and different partials
 - **Documentation**:
