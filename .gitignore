@@ -1,2 +1,3 @@
-.idea/
-Sass/.sass-cache/
+.idea
+Sass/.sass-cache
+test

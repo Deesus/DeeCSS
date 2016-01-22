@@ -26,13 +26,15 @@
   flex:             $value;
 }
 
-// flex-flow is shorthand for flex-direction, flex-wrap
+// `flex-flow` is shorthand for flex-direction, flex-wrap
+// Remember to add`-webkit-box-orient` and `-webkit-box-direction` properties in conjunction to mixin:
 @mixin flex-flow($direction, $wrap) {
-  -webkit-flex-flow: $direction $wrap;
-  -ms-flex-flow: $direction $wrap;
-  flex-flow: $direction $wrap;
+  -webkit-flex-flow:  $direction $wrap;
+  -ms-flex-flow:      $direction $wrap;
+  flex-flow:          $direction $wrap;
 }
 
+// Remember to add`-webkit-box-orient` property in conjunction to mixin:
 @mixin flex-direction($direction) {
   -webkit-flex-direction: $direction;
   -ms-flex-direction:     $direction;
@@ -49,7 +51,7 @@
 /**************
  Resets
  **************/
-/* TODO: create own resets (as separate file) */
+// TODO: create own resets (as separate file)
 
 * {
   margin: 0;
@@ -74,6 +76,20 @@ a {
 }
 
 /**************
+ Sticky Footer
+ **************/
+body {
+  @include display-as-flex;
+  @include flex-direction(column);
+  -webkit-box-orient: vertical;
+  min-height: 100vh;
+}
+
+#body-wrapper {
+  @include flex(1);
+}
+
+/**************
  Grid System
  **************/
 /* NOTE: images inside columns must be wrapped in separate div to prevent vertical stretching */
@@ -90,19 +106,19 @@ a {
 }
 
 [class ^= 'col-'] {
-  /* reset flex -- don't readjust width of columns */
+  // reset flex -- don't readjust width of columns:
   @include flex(0, 0, auto);
 
-  /* display as flex */
+  // display as flex:
   display: flex;
 }
 
 @for $i from 1 through 12 {
   .col-#{$i} {
-    -ms-flex-preferred-size: ((100% / 12) * $i);    // `-ms-flex-preferred-size` is used for IE10 support
-    -webkit-flex-basis: ((100% / 12) * $i);
-    flex-basis: ((100% / 12) * $i);
-    max-width: ((100% / 12) * $i);
+    -ms-flex-preferred-size:  ((100% / 12) * $i);    // `-ms-flex-preferred-size` is used for IE10 support
+    -webkit-flex-basis:       ((100% / 12) * $i);
+    flex-basis:               ((100% / 12) * $i);
+    max-width:                ((100% / 12) * $i);
   }
 }
 
