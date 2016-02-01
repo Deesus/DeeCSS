@@ -1,4 +1,4 @@
-## FF - FlexFramework 0.2.1
+## FF - FlexFramework 0.2.2
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was created from scratch. 
@@ -22,9 +22,9 @@ DeeCSS/
     │    └── scripts/
     │          └── scripts.js
     └── Sass/
+          ├── FlexFramework.scss
           ├── styles.css
-          ├── styles.css.map
-          └── styles.scss
+          └── styles.css.map
 ```
 
 #### TODO:
