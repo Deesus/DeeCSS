@@ -32,7 +32,8 @@ DeeCSS/
 - **Refactor**:
     + [x] Consolidate Sass
         + [ ] Find a way to consolidate `-webkit-box` inside mixins. Possibly create separate mixins specifically for -webkit-box?
-    + [ ] Boilerplate should include sticky footer wrapper and CSS
+    + [x] HTML Boilerplate includes sticky footer wrapper and CSS
+    + [ ] Consolidate [MythJS](https://github.com/segmentio/myth)
     + [ ] Separate menus, buttons, etc. into different CSS and different partials
 - **Documentation**:
     + [ ] Improve README
