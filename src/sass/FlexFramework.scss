@@ -1,24 +1,7 @@
 /*******************
  Author: Dee Reddy (deesus@yandex.com)
  *******************/
-
-/**************
- Resets
- **************/
-// TODO: create own resets (as separate partial)
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+@import "resets";
 
 /**************
  Typography
