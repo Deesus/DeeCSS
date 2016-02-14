@@ -2,80 +2,15 @@
  Author: Dee Reddy (deesus@yandex.com)
  *******************/
 @import "resets";
-
-/**************
- Typography
- **************/
-html {
-  /* we use 10px = 1rem for easy calculations (e.g. 3rem = 30px) */
-  font-size: 10px;
-}
-
-body {
-  /* using `em` instead of `rem` in body b/c bug in chrome (use `rem` in all other areas) */
-  font-size: 1.5em;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #222;    /* NOT pure black */
-  // TODO: specify:
-  // line-height
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 2rem;
-}
-
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-size: (8rem/$i * 1.5);
-    // TODO: specify:
-    // line-height
-    // letter-spacing
-  }
-}
-
-/**************
- Grid System
- **************/
-/* NOTE: images inside columns must be wrapped in separate div to prevent vertical stretching */
-.row {
-  @include display-as-flex;
-
-  /* reset flex */
-  @include flex(0, 1, auto);
-
-  /* flex-flow */
-  @include flex-flow(row, wrap);
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-[class ^= 'col-'] {
-  // reset flex -- don't readjust width of columns:
-  @include flex(0, 0, auto);
-
-  // display as flex:
-  display: flex;
-}
-
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    -ms-flex-preferred-size:  ((100% / 12) * $i);    // `-ms-flex-preferred-size` is used for IE10 support
-    -webkit-flex-basis:       ((100% / 12) * $i);
-    flex-basis:               ((100% / 12) * $i);
-    max-width:                ((100% / 12) * $i);
-  }
-}
+@import "flexgrid";
+@import "typography";
 
 /**************
  Sticky Footer
  **************/
+/* for sticky footer, wrap everything but the footer in this selector: */
 body {
-  @include display-as-flex;
+  @include display-flex;
   @include flex-direction(column);
   -webkit-box-orient: vertical;
   min-height: 100vh;
@@ -102,54 +37,7 @@ img {
 /*******************
  Utility Functions
  *******************/
-/* horizontally align items inside a container: */
-.h-center {
-  display: flex;
-  justify-content: center;
-}
-
-/* vertically align items inside a container: */
-.v-center {
-  display: flex;
-  align-items: center;
-}
-
-/* container makes any/all child items equal in width (but content inside items can overflow if too long) */
-.equal-width-divs > * {
-  // TODO: Is using flex better than simply using `width: 100%;`?
-  @include flex(1);
-}
-
-/* container spaces all child content equally (but div widths will be different) */
-.equally-spaced-content {
-  justify-content: space-between;
-}
-
-/*  in certain cases, when we want to equally space items inside a column,
-    `equally-spaced-content` and `equal-width-divs` won't work -- this resets the display. */
-// TODO: can't we just put this inside `equally-spaced-content` and `equal-width-divs`?
-.reset {
-  @include display-as-flex;
-  width: 100%
-}
-
-/* child items are aligned in a column */
-.make-column {
-  width: 100%;
-  @include flex-direction(column);
-  -webkit-box-orient: vertical;
-}
-
-/* use `.align-bottom` in conjunction with `.align-bottom-container` */
-.align-bottom-container {
-  @include display-as-flex;
-  height: 100%;           /* This height property takes up its parent size (e.g. 197px from header) */
-}
-
-.align-bottom {
-  width: 100%;
-  align-self: flex-end;
-}
+// C.f. flex alignments
 
 /*******************
  Buttons

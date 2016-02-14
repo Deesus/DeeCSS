@@ -1,0 +1,34 @@
+/**************
+ Typography
+ **************/
+html {
+  /* we use 10px = 1rem for easy calculations (e.g. 3rem = 30px) */
+  font-size: 10px;
+}
+
+body {
+  /* using `em` instead of `rem` in body b/c bug in chrome (use `rem` in all other areas) */
+  font-size: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;    /* NOT pure black */
+  // TODO: specify:
+  // line-height
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 2rem;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: (8rem/$i * 1.5);
+    // TODO: specify:
+    // line-height
+    // letter-spacing
+  }
+}
