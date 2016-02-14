@@ -1,0 +1,83 @@
+@import "compass";
+@import "compass/css3/flexbox";
+
+.container-fluid {
+  box-sizing: border-box;
+  // make fluid:
+  margin-left:  auto;
+  margin-right: auto;
+  // needed to compensate for gutters when the rows wrap:
+  padding-right:  2rem;
+  padding-left:   2rem;
+}
+
+.row {
+  @include display-flex;
+  @include flex(0 1 auto);
+  @include flex-direction(row);
+  @include flexbox((
+          box-orient:     horizontal,
+          box-direction:  normal
+  ));
+  @include flex-wrap(wrap);
+  margin-left:  -1rem;
+  margin-right: -1rem;
+}
+
+[class ^= 'col-'] {
+  @include flex(0 0 auto);  // shorthand for flex-grow, flex-shrink, flex-basis
+  @include box-sizing(border-box);
+  @include flex-grow(1);
+  @include flex-basis(0);
+  /* N.b. columns don't have pre-set padding */
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include flex-basis       ((100%/12) * $i);
+    -ms-flex-preferred-size:  ((100% / 12) * $i);    // `-ms-flex-preferred-size` is used for IE10 support
+    max-width:                ((100%/12) * $i);
+  }
+}
+
+/* Align Flex Items: */
+
+/* main axis: */
+// N.b.: since 'justify' only exists as `justify-content` we shorten selector to 'justify'
+.justify {
+  &-start {
+    @include justify-content(flex-start);
+  }
+  &-end {
+    @include justify-content(flex-end);
+  }
+  &-center {
+    @include justify-content(center);
+  }
+  &-space-between {
+    @include justify-content(space-between);
+  }
+  &-space-around {
+    @include justify-content(space-around);
+  }
+}
+
+/* cross axis: */
+.align-items {
+  &-start {
+    @include align-items(flex-start);
+  }
+  &-end {
+    @include align-items(flex-end);
+  }
+  &-center {
+    @include align-items(center);
+  }
+  &-stretch {
+    @include align-items(stretch);
+  }
+  // TODO: do we really need to specify the `baseline` value?
+}
+
+// TODO: add flex `align-self` property?
+
