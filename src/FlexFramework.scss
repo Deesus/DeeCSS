@@ -2,52 +2,6 @@
  Author: Dee Reddy (deesus@yandex.com)
  *******************/
 
-//////////////////////////////
-//      Sass Functions      //
-//////////////////////////////
-
-// args: grow, shrink, basis
-@mixin flex($args...) {
-
-  $value: null;
-  @if length($args) == 1 {
-    $value: $args;
-  }
-  @else if length($args) == 2 {
-    $value: nth($args, 1) nth($args, 2);
-  }
-  @else if length($args) == 3 {
-    $value: nth($args, 1) nth($args, 2) nth($args, 3);
-  }
-
-  -webkit-flex:     $value;
-  -ms-flex:         $value;
-  -webkit-box-flex: nth($args, 1);
-  flex:             $value;
-}
-
-// `flex-flow` is shorthand for flex-direction, flex-wrap
-// Remember to add`-webkit-box-orient` and `-webkit-box-direction` properties in conjunction to mixin:
-@mixin flex-flow($direction, $wrap) {
-  -webkit-flex-flow:  $direction $wrap;
-  -ms-flex-flow:      $direction $wrap;
-  flex-flow:          $direction $wrap;
-}
-
-// Remember to add`-webkit-box-orient` property in conjunction to mixin:
-@mixin flex-direction($direction) {
-  -webkit-flex-direction: $direction;
-  -ms-flex-direction:     $direction;
-  flex-direction:         $direction;
-}
-
-@mixin display-as-flex {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-}
-
 /**************
  Resets
  **************/

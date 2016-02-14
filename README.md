@@ -4,6 +4,10 @@
 My custom CSS with the intention of replacing Bootstrap. This project was created from scratch. 
 Main goals: design should be veritably responsive; should have a low learning curve; should solve common design issues.
 
+#### Requirements:
+- [Sass](https://github.com/sass/sass)
+- [Compass](http://compass-style.org/)
+
 #### Features:
 
 - Flexbox CSS grid system

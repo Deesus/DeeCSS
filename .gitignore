@@ -1,3 +1,4 @@
 .idea
-Sass/.sass-cache
-test
+.sass-cache
+/src/test
+_unimplemented
