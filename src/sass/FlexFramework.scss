@@ -1,9 +1,10 @@
 /*******************
  Author: Dee Reddy (deesus@yandex.com)
  *******************/
-@import "resets";
-@import "flexgrid";
-@import "typography";
+@import "resets",
+        "flexgrid",
+        "typography",
+        "utility";
 // ==========================================================================
 
 /**************
@@ -34,11 +35,6 @@ img {
   // removes the extra space on bottom of a div that contains an image:
   display: block;
 }
-
-/*******************
- Utility Functions
- *******************/
-// C.f. flex alignments
 
 /*******************
  Buttons

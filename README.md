@@ -2,7 +2,7 @@
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was created from scratch. 
-Main goals: design should be veritably responsive; should have a low learning curve; should solve common design issues.
+Main goals: design should be veritably responsive; should have a low learning curve; should solve common design issues; should use flexboxes to solve everything*.
 
 #### Requirements:
 - [Sass](https://github.com/sass/sass)
