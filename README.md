@@ -29,8 +29,10 @@ FlexFramework/
           ├── sass/
           │    ├── FlexFramework.scss
           │    ├── _flexgrid.scss
+          │    ├── _media.scss
           │    ├── _resets.scss 
-          │    └── _typography.scss 
+          │    ├── _typography.scss 
+          │    └── _utility.scss 
           └── stylesheets/
                 └── FlexFramework.css
 ```
@@ -46,16 +48,15 @@ FlexFramework/
     + [ ] Add CSS buttons
     + [ ] Add menus
     + [ ] Add utility functions
-    + [ ] Add typography
-- **Major/structural changes**:
-    + [ ] Add media queries
-    + [ ] C.f. Gumby, Skeleton, and Pure frameworks for additional implementation ideas
+    + [x] Add typography
+    + [x] Add media queries
 - **Misc.**
     + [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
     + [ ] Move `img` styling to 'Default Styles' section
     + [ ] Make responsive
 - **Future**
     + [ ] Consolidate [MythJS](https://github.com/segmentio/myth)
+    + [ ] C.f. Gumby, Skeleton, and Pure frameworks for additional implementation ideas
 
 #### License
 Copyright (c) 2016 Dee Reddy.

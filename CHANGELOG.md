@@ -2,6 +2,8 @@
 - Changed to Compass project (rather than solely Sass).
     - Remarks: There is no point in trying to create personal mixins that already exist (in Compass).
 - Added module folders (for external stylesheets -- e.g. resets)
+- Split styles into partials
+- Added media queries
 
 ### 0.2.2
 - Added basic typography/font sizing

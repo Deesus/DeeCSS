@@ -5,6 +5,7 @@
         "flexgrid",
         "typography",
         "utility";
+        // _media.scss (at end)
 // ==========================================================================
 
 /**************
@@ -46,3 +47,8 @@ button, .button, input[type='button'], input[type='submit'], input[type='reset']
 /*******************
  Menus
  *******************/
+
+/*******************
+ Media queries
+ *******************/
+@import "media";
