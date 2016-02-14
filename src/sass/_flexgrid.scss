@@ -1,6 +1,9 @@
 @import "compass";
 @import "compass/css3/flexbox";
 
+/**************
+ Grid
+ **************/
 .container-fluid {
   box-sizing: border-box;
   // make fluid:
@@ -24,6 +27,7 @@
   margin-right: -1rem;
 }
 
+/* columns: */
 [class ^= 'col-'] {
   @include flex(0 0 auto);  // shorthand for flex-grow, flex-shrink, flex-basis
   @include box-sizing(border-box);
@@ -40,8 +44,9 @@
   }
 }
 
-/* Align Flex Items: */
-
+/**************
+ Align Flex Items (i.e. flex utilities):
+ **************/
 /* main axis: */
 // N.b.: since 'justify' only exists as `justify-content` we shorten selector to 'justify'
 .justify {
