@@ -1,3 +1,6 @@
+### 0.2.4
+- Added basic `_utility` CSS selectors
+
 ### 0.2.3
 - Changed to Compass project (rather than solely Sass).
     - Remarks: There is no point in trying to create personal mixins that already exist (in Compass).
