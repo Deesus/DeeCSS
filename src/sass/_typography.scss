@@ -2,8 +2,8 @@
  Typography:
  **************/
 html {
-  /* we use 10px = 1rem for easy calculations (e.g. 3rem = 30px) */
-  font-size: 10px;
+  /* 1rem = 10px for easy calculations (e.g. 3rem = 30px): */
+  font-size: 62.5%;
 }
 
 body {
@@ -20,15 +20,26 @@ a {
   color: inherit;
 }
 
+// Use Skeleton's header typography:
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 2rem;
+  margin-top:     0;
+  margin-bottom:  2rem;
+  font-weight:    300;
 }
 
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-size: (8rem/$i * 1.5);
-    // TODO: specify:
-    // line-height
-    // letter-spacing
-  }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
 }
