@@ -14,7 +14,7 @@
   padding-left:   2rem;
 }
 
-.row {
+.row, .row-no-fluid {
   @include display-flex;
   @include flex(0 1 auto);
   @include flex-direction(row);

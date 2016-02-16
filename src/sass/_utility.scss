@@ -3,8 +3,8 @@
   margin:   0;
 }
 
-/* use in '.row' if NOT nested in fluid */
-.no-fluid {
+/* use '.row-no-fluid' if NOT nested in container-fluid */
+.row-no-fluid {
   margin-left:  0;
   margin-right: 0;
 }
@@ -22,4 +22,8 @@
 
 .text-center {
   text-align: center;
+}
+
+.full-height {
+  min-height: 100%;
 }
