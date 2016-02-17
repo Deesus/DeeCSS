@@ -1,5 +1,7 @@
 ### 0.2.4
 - Added basic `_utility` CSS selectors
+- Added "holy grail layout"
+- Added anchor and ul resets; moved img reset.
 
 ### 0.2.3
 - Changed to Compass project (rather than solely Sass).

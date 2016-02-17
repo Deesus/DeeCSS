@@ -22,3 +22,14 @@
 @media all and (min-width : 1824px) {
   // add styles
 }
+
+
+/* Holy Grail Layout -- as according to Mozilla */
+@media screen and (max-width: 640px) {
+  // TODO: replace with selector
+  .place-holder {
+    @include flex-direction(column);
+    @include flexbox((box-orient: vertical));
+    order: 0;
+  }
+}
