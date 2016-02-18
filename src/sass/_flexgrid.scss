@@ -83,3 +83,15 @@
 
 // TODO: add flex `align-self` property?
 
+
+/* creates flexbox container, horizontal direction */
+.flex-row {
+  @include display-flex;
+  @include flex-direction(row);
+}
+
+/* creates flexbox container, vertical direction */
+.flex-column {
+  @include display-flex;
+  @include flex-direction(column);
+}
