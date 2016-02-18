@@ -46,7 +46,7 @@ FlexFramework/
     + [ ] Add showcase/example HTML (instead of just boilerplate template)
 - **Functionality**:
     + [ ] Create more pre-defined flex class selectors
-    + [ ] Add CSS buttons
+    + [x] Add CSS buttons
     + [ ] Add menus
     + [ ] Add utility functions
     + [x] Add typography

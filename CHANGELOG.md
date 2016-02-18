@@ -1,6 +1,7 @@
 ### 0.2.5
 - Fixed possible bug w/ margins in `container-fluid` -- removed auto margins.
 - Added pre-defined flex class selectors `flex-column` and `flex-row`
+- Added default buttons
 
 ### 0.2.4
 - Added basic `_utility` CSS selectors
