@@ -1,3 +1,6 @@
+### 0.2.5
+- Fixed possible bug w/ margins in `container-fluid` -- removed auto margins.
+
 ### 0.2.4
 - Added basic `_utility` CSS selectors
 - Added "holy grail layout"
