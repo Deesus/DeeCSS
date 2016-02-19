@@ -4,14 +4,15 @@
 /**************
  Grid
  **************/
-.container-fluid {
+/* container differs from Bootstrap's `container-fluid` in that we don't use auto margins */
+.container {
   box-sizing: border-box;
   // needed to compensate for gutters when the rows wrap:
   padding-right:  2rem;
   padding-left:   2rem;
 }
 
-.row, .row-no-fluid {
+.row, .container-row {
   @include display-flex;
   @include flex(0 1 auto);
   @include flex-direction(row);
@@ -20,6 +21,12 @@
           box-direction:  normal
   ));
   @include flex-wrap(wrap);
+  margin-left:  0;
+  margin-right: 0;
+}
+
+/* use '.row' if NOT nested in '.container' otherwise use '.container-row' */
+.container-row {
   margin-left:  -1rem;
   margin-right: -1rem;
 }
@@ -36,7 +43,7 @@
 @for $i from 1 through 12 {
   .col-#{$i} {
     @include flex-basis       ((100%/12) * $i);
-    -ms-flex-preferred-size:  ((100% / 12) * $i);    // `-ms-flex-preferred-size` is used for IE10 support
+    -ms-flex-preferred-size:  ((100%/12) * $i);    // `-ms-flex-preferred-size` is used for IE10 support
     max-width:                ((100%/12) * $i);
   }
 }

@@ -1,3 +1,6 @@
+### 0.2.6
+- Renamed/re-mapped `row` and `container-fluid`. Now we wrap sections with `container` (n.b. no "fluid"). We specify rows that aren't wrapped in '.container' class with `row` and if they are nested in `container`, rows are specified with `container-row`.
+
 ### 0.2.5
 - Fixed possible bug w/ margins in `container-fluid` -- removed auto margins.
 - Added pre-defined flex class selectors `flex-column` and `flex-row`
