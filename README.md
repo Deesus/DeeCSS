@@ -17,7 +17,7 @@ Main goals: should be veritably responsive; should have a low learning curve; sh
 #### Quick start:
 1. Cd to the the `src/` directory to modify existing resources.
 2. Add a compass watcher in the `src` directory: `$ compass watch`.
-3. Add/edit whatever you want to the stylesheets; the output will be written to `FlexFramework.css`.
+3. Add/edit whatever you want to stylesheets -- the output will be written to `FlexFramework.css`.
 
 
 - External stylesheets (e.g. normalize.css) are placed in the `external` subdirectory
