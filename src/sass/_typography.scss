@@ -1,6 +1,12 @@
 /**************
  Typography:
  **************/
+
+// TODO: choose different blue:
+$link-blue:     deepskyblue;
+$link-hover:    #0FA0CE;
+// ==========================================================================
+
 html {
   /* 1rem = 10px for easy calculations (e.g. 3rem = 30px): */
   font-size: 62.5%;
@@ -8,16 +14,19 @@ html {
 
 body {
   /* using `em` instead of `rem` in body b/c bug in chrome (use `rem` in all other areas) */
-  font-size: 1.5em;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #222;    /* NOT pure black */
+  font-size:    1.5em;
+  font-family:  Helvetica, Arial, sans-serif;
+  color:        #222;    /* NOT pure black */
   // TODO: specify:
   // line-height
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color:    $link-blue;
+  &:hover {
+    color:  $link-hover;
+  }
 }
 
 // Use Skeleton's header typography:

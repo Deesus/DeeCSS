@@ -1,14 +1,10 @@
 /**************
  Resets
  **************/
-// TODO: choose different blue:
-$link-blue:     deepskyblue;
-$link-hover:    #0FA0CE;
-// ==========================================================================
 
 * {
-  margin: 0;
-  padding: 0;
+  margin:   0;
+  padding:  0;
 }
 
 html {
@@ -21,18 +17,13 @@ html {
 
 img {
   /* image automatically resizes to max-width of the boundary: */
-  max-width: 100%;
-  height: auto;
+  max-width:  100%;
+  height:     auto;
 
   // removes the extra space on bottom of a div that contains an image:
-  display: block;
+  display:    block;
 }
 
 ul {
   list-style: none;
 }
-
-a {
-  color: $link-blue; }
-a:hover {
-  color: $link-hover; }

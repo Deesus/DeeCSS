@@ -5,7 +5,7 @@
         "flexgrid",
         "typography",
         "utility";
-        // _media.scss (at end)
+        // _media.scss (imported at end of file)
 // ==========================================================================
 
 /**************
@@ -22,12 +22,6 @@ body {
 #body-wrapper {
   @include flex(1);
 }
-
-/*******************
- Default Styles
- *******************/
-// TODO: set defaults for link color, font-family, header font, sizes, etc.
-
 
 /*******************
  Buttons
