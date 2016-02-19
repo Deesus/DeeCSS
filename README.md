@@ -1,7 +1,7 @@
-## FF - FlexFramework 0.2.2
+## FF - FlexFramework 0.2.5
 ###### A simple CSS-HTML framework
 
-My custom CSS with the intention of replacing Bootstrap. This project was created from scratch. 
+My custom CSS with the intention of replacing Bootstrap. This project was *almost* entirely created from scratch. 
 Main goals: design should be veritably responsive; should have a low learning curve; should solve common design issues; should use flexboxes to solve everything*.
 
 #### Requirements:
@@ -10,8 +10,17 @@ Main goals: design should be veritably responsive; should have a low learning cu
 
 #### Features:
 - Flexbox CSS grid system
+- CSS resets
 - Flexbox sticky footer
 - HTML boilerplate
+
+#### Quick start:
+1) Cd to the the `src/` directory to modify existing resources
+2) Add a compass watcher in the `src` directory: `$ compass watch`
+3) Add/edit whatever you want to the stylesheets; the output will be written to `FlexFramework.css`
+
+- External stylesheets (e.g. normalize.css) are placed in the `external` subdirectory
+- Production resources are located in the `public` directory
 
 #### File Structure:
 ```
@@ -33,14 +42,17 @@ FlexFramework/
           │    ├── _resets.scss 
           │    ├── _typography.scss 
           │    └── _utility.scss 
-          └── stylesheets/
-                └── FlexFramework.css
+          ├── stylesheets/
+          │    └── FlexFramework.css
+          └── external/
+                └── normalize.scss
 ```
 
 #### TODO:
 - **Refactor**:
     + [x] HTML Boilerplate includes sticky footer wrapper and CSS
     + [ ] Review/revise CSS
+    + [ ] Add minified CSS
 - **Documentation**:
     + [ ] Add API documentation
     + [ ] Add showcase/example HTML (instead of just boilerplate template)
@@ -51,13 +63,13 @@ FlexFramework/
     + [ ] Add utility functions
     + [x] Add typography
     + [x] Add media queries
+    + [ ] Add JS
 - **Misc.**
     + [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
     + [ ] Move `img` styling to 'Default Styles' section
     + [ ] Make responsive
 - **Future**
-    + [ ] Consolidate [MythJS](https://github.com/segmentio/myth)
-    + [ ] C.f. Gumby, Skeleton, and Pure frameworks for additional implementation ideas
+    + [ ] C.f. Gumby, Skeleton, MythJS, and Pure frameworks for additional implementation ideas
 
 #### License
 Copyright (c) 2016 Dee Reddy.
