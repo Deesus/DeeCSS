@@ -15,6 +15,7 @@ Main goals: should be veritably responsive; should have a low learning curve; sh
 - HTML boilerplate
 
 #### Quick start:
+
 - External stylesheets (e.g. normalize.css) are placed in the `external` subdirectory
 - Production resources are located in the `public` directory
 
