@@ -2,7 +2,7 @@
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was *almost* entirely created from scratch. 
-Main goals: design should be veritably responsive; should have a low learning curve; should solve common design issues; should use flexboxes to solve everything*.
+Main goals: should be veritably responsive; should have a low learning curve; should solve common design issues; should use flexboxes to solve everything.
 
 #### Requirements:
 - [Sass](https://github.com/sass/sass)
@@ -15,9 +15,9 @@ Main goals: design should be veritably responsive; should have a low learning cu
 - HTML boilerplate
 
 #### Quick start:
-1) Cd to the the `src/` directory to modify existing resources
-2) Add a compass watcher in the `src` directory: `$ compass watch`
-3) Add/edit whatever you want to the stylesheets; the output will be written to `FlexFramework.css`
+1. Cd to the the `src/` directory to modify existing resources
+2. Add a compass watcher in the `src` directory: `$ compass watch`
+3. Add/edit whatever you want to the stylesheets; the output will be written to `FlexFramework.css`
 
 - External stylesheets (e.g. normalize.css) are placed in the `external` subdirectory
 - Production resources are located in the `public` directory
@@ -71,5 +71,5 @@ FlexFramework/
 - **Future**
     + [ ] C.f. Gumby, Skeleton, MythJS, and Pure frameworks for additional implementation ideas
 
-#### License
+#### License:
 Copyright (c) 2016 Dee Reddy.
