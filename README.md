@@ -1,4 +1,4 @@
-# FF - FlexFramework 0.2.6
+# FlexFramework 0.2.8
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was *almost* entirely created from scratch. 
@@ -11,6 +11,8 @@ Main goals: should be veritably responsive; should have a low learning curve; sh
 #### Features:
 - Flexbox CSS grid system
 - CSS resets
+- CSS buttons
+- typography
 - Flexbox sticky footer
 - HTML boilerplate
 
@@ -31,7 +33,8 @@ FlexFramework/
     ├── public/
     │    ├── index.html
     │    ├── stylesheets/
-    │    │    └── styles.css
+    │    │    ├── flexframework.css
+    │    │    └── flexframework.min.css
     │    └── scripts/
     │          └── scripts.js
     └── src/
@@ -50,28 +53,30 @@ FlexFramework/
 ```
 
 #### TODO:
-- **Refactor**:
-    + [ ] Do we really need `column` selector (width-less grid container)?
-    + [x] HTML Boilerplate includes sticky footer wrapper and CSS
-    + [ ] Review/revise CSS
-    + [ ] Add minified CSS
-- **Documentation**:
-    + [ ] Add API documentation
-    + [ ] Add showcase/example HTML (instead of just boilerplate template)
-- **Functionality**:
-    + [ ] Create more pre-defined flex class selectors
-    + [x] Add CSS buttons
-    + [ ] Add menus
-    + [ ] Add utility functions
-    + [x] Add typography
-    + [x] Add media queries
-    + [ ] Add JS
-- **Misc.**
-    + [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
-    + [ ] Move `img` styling to 'Default Styles' section
-    + [ ] Make responsive
-- **Future**
-    + [ ] C.f. Gumby, Skeleton, MythJS, and Pure frameworks for additional implementation ideas
+
+###### Refactor:
++ [ ] Do we really need `column` selector (width-less grid container)?
++ [x] HTML Boilerplate includes sticky footer wrapper and CSS
++ [ ] Review/revise CSS
+
+###### Documentation:
++ [ ] Add API documentation
++ [ ] Add showcase/example HTML (instead of just boilerplate template)
+
+###### Functionality:
++ [ ] Create more pre-defined flex class selectors
++ [x] Add CSS buttons
++ [ ] Add menus
++ [x] Add utility functions
++ [x] Add media queries
++ [ ] Add JS
+
+###### Misc.:
++ [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
++ [ ] Make responsive
+
+###### Future:
++ [ ] C.f. Gumby, Skeleton, MythJS, and Pure frameworks for additional ideas
 
 #### License:
 Copyright (c) 2016 Dee Reddy.

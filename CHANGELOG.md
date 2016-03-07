@@ -1,3 +1,7 @@
+### 0.2.8
+- Added minified CSS.
+- Renamed public CSS to `flexframework.css`.
+
 ### 0.2.7
 - Simplified containers and fluid-containers.
 - Simplified utility classes: i.e. remove `.row-no-fluid`; rename `.clear-container`.
