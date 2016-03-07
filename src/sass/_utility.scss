@@ -1,27 +1,26 @@
-.no-pad, .no-padding {
+/* removes both padding and margins */
+.no-gutter, .no-pad-margin {
   padding:  0;
   margin:   0;
 }
 
-/* use '.row-no-fluid' if NOT nested in container-fluid */
-.row-no-fluid {
-  margin-left:  0;
-  margin-right: 0;
-}
-
-/* use if nested in fluid and want to clear */
+/* use if nested in 'fluid' and want to clear */
 .clear-fluid {
   margin-left:  -2rem;
   margin-right: -2rem;
 }
 
-.responsive, .margin-center {
+.auto-margin, .margin-center {
   margin-left:  auto;
   margin-right: auto;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .full-height {

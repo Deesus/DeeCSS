@@ -17,7 +17,7 @@ html {
   box-sizing: inherit;
 }
 
-img {
+img, figure {
   /* image automatically resizes to max-width of the boundary: */
   max-width: 100%;
   height: auto;
@@ -28,24 +28,17 @@ ul {
   list-style: none;
 }
 
-a {
-  color: deepskyblue;
-}
-
-a:hover {
-  color: #0FA0CE;
-}
-
 /**************
  Grid
  **************/
-.container-fluid {
+/* container differs from Bootstrap's `container-fluid` in that we don't use auto margins */
+.container {
   box-sizing: border-box;
   padding-right: 2rem;
   padding-left: 2rem;
 }
 
-.row, .row-no-fluid {
+.row, .container-row {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 0 1 auto;
@@ -58,12 +51,20 @@ a:hover {
   box-direction: normal;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* use '.row' if NOT nested in '.container' otherwise use '.container-row' */
+.container-row {
   margin-left: -1rem;
   margin-right: -1rem;
 }
 
 /* columns: */
-[class^='col-'] {
+/* use `col-1` through `col-12` for fixed column widths (from 1/12% to 100%, respectively) */
+/* use the plain selector `column` for width-less column */
+[class^='col-'], .column {
   -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
   -moz-box-sizing: border-box;
@@ -222,6 +223,7 @@ a:hover {
 /**************
  Typography:
  **************/
+/* NOT pure black */
 html {
   /* 1rem = 10px for easy calculations (e.g. 3rem = 30px): */
   font-size: 62.5%;
@@ -232,12 +234,14 @@ body {
   font-size: 1.5em;
   font-family: Helvetica, Arial, sans-serif;
   color: #222;
-  /* NOT pure black */
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: deepskyblue;
+}
+a:hover {
+  color: #0FA0CE;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -308,30 +312,40 @@ h6 {
     font-size: 1.5rem;
   }
 }
-.no-pad, .no-padding {
+/* Change selection color: */
+::selection {
+  background: #4fc8de;
+  color: ghostwhite;
+}
+
+::-moz-selection {
+  background: #4fc8de;
+  color: ghostwhite;
+}
+
+/* removes both padding and margins */
+.no-gutter, .no-pad-margin {
   padding: 0;
   margin: 0;
 }
 
-/* use '.row-no-fluid' if NOT nested in container-fluid */
-.row-no-fluid {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* use if nested in fluid and want to clear */
+/* use if nested in 'fluid' and want to clear */
 .clear-fluid {
   margin-left: -2rem;
   margin-right: -2rem;
 }
 
-.responsive, .margin-center {
+.auto-margin, .margin-center {
   margin-left: auto;
   margin-right: auto;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .full-height {
@@ -341,7 +355,6 @@ h6 {
 /**************
  Sticky Footer
  **************/
-/* for sticky footer, wrap everything but the footer in this selector: */
 body {
   display: -webkit-flex;
   display: flex;
@@ -351,14 +364,12 @@ body {
   min-height: 100vh;
 }
 
+/* for sticky footer, wrap everything but the footer in this selector: */
 #body-wrapper {
   -webkit-flex: 1;
   flex: 1;
 }
 
-/*******************
- Default Styles
- *******************/
 /*******************
  Buttons
  *******************/

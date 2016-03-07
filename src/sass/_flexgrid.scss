@@ -32,7 +32,9 @@
 }
 
 /* columns: */
-[class ^= 'col-'] {
+/* use `col-1` through `col-12` for fixed column widths (from 1/12% to 100%, respectively) */
+/* use the plain selector `column` for width-less column */
+[class ^= 'col-'], .column {
   @include flex(0 0 auto);  // shorthand for flex-grow, flex-shrink, flex-basis
   @include box-sizing(border-box);
   @include flex-grow(1);

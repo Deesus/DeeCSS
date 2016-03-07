@@ -11,14 +11,14 @@
 /**************
  Sticky Footer
  **************/
-/* for sticky footer, wrap everything but the footer in this selector: */
 body {
   @include display-flex;
   @include flex-direction(column);
   -webkit-box-orient: vertical;
-  min-height: 100vh;
+  min-height:         100vh;
 }
 
+/* for sticky footer, wrap everything but the footer in this selector: */
 #body-wrapper {
   @include flex(1);
 }

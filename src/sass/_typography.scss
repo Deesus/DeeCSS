@@ -5,6 +5,8 @@
 // TODO: choose different blue:
 $link-blue:     deepskyblue;
 $link-hover:    #0FA0CE;
+$sky-blue:      #4fc8de;
+$black:         #222;           /* NOT pure black */
 // ==========================================================================
 
 html {
@@ -16,7 +18,7 @@ body {
   /* using `em` instead of `rem` in body b/c bug in chrome (use `rem` in all other areas) */
   font-size:    1.5em;
   font-family:  Helvetica, Arial, sans-serif;
-  color:        #222;    /* NOT pure black */
+  color:        $black;
   // TODO: specify:
   // line-height
 }
@@ -51,4 +53,16 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h4 { font-size: 3.0rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
+}
+
+/* Change selection color: */
+// n.b. selector cannot be combined (CSS gotcha)
+::selection {
+  background: $sky-blue;
+  color:      ghostwhite;
+}
+
+::-moz-selection {
+  background: $sky-blue;
+  color:      ghostwhite;
 }

@@ -1,4 +1,4 @@
-# FF - FlexFramework 0.2.5
+# FF - FlexFramework 0.2.6
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was *almost* entirely created from scratch. 
@@ -19,7 +19,7 @@ Main goals: should be veritably responsive; should have a low learning curve; sh
 2. Add a compass watcher in the `src` directory: `$ compass watch`.
 3. Add/edit whatever you want to the stylesheets; the output will be written to `FlexFramework.css`.
 
-### Useful Info:
+#### Useful Info:
 - External stylesheets (e.g. normalize.css) are placed in the `external` subdirectory
 - Production resources are located in the `public` directory
 
@@ -46,11 +46,12 @@ FlexFramework/
           ├── stylesheets/
           │    └── FlexFramework.css
           └── external/
-               └── normalize.scss
+                └── normalize.scss
 ```
 
 #### TODO:
 - **Refactor**:
+    + [ ] Do we really need `column` selector (width-less grid container)?
     + [x] HTML Boilerplate includes sticky footer wrapper and CSS
     + [ ] Review/revise CSS
     + [ ] Add minified CSS
