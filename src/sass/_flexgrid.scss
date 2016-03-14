@@ -51,11 +51,23 @@
 }
 
 /**************
- Align Flex Items (i.e. flex utilities):
+ Flex Container properties:
  **************/
-/* main axis: */
-// N.b.: since 'justify' only exists as `justify-content` we shorten selector to 'justify'
-.justify {
+/* creates flexbox container horizontal direction */
+.flex-row {
+  @include display-flex;
+  @include flex-direction(row);
+}
+
+/* creates flexbox container vertical direction */
+.flex-column {
+  @include display-flex;
+  @include flex-direction(column);
+}
+
+/* main axis properties: */
+// N.b.: we can use full `justify-content` name or the `justify` shorthand (e.g. `.justify-start`)
+.justify, .justify-content {
   &-start {
     @include justify-content(flex-start);
   }
@@ -73,7 +85,7 @@
   }
 }
 
-/* cross axis: */
+/* cross axis properties: */
 .align-items {
   &-start {
     @include align-items(flex-start);
@@ -87,20 +99,25 @@
   &-stretch {
     @include align-items(stretch);
   }
-  // TODO: do we really need to specify the `baseline` value?
+  // TODO: do we really need to specify the `baseline` value? I.e. `align-items-baseline` ?
 }
 
-// TODO: add flex `align-self` property?
-
-
-/* creates flexbox container, horizontal direction */
-.flex-row {
-  @include display-flex;
-  @include flex-direction(row);
-}
-
-/* creates flexbox container, vertical direction */
-.flex-column {
-  @include display-flex;
-  @include flex-direction(column);
+/**************
+ Flex Item properties:
+ **************/
+/* cross axis properties: */
+.align-self {
+  &-start{
+    @include align-self(flex-start);
+  }
+  &-end {
+    @include align-self(flex-end);
+  }
+  &-center {
+    @include align-self(center);
+  }
+  &-stretch {
+    @include align-self(stretch);
+  }
+  // TODO: similarly, do we need to specify `baseline` for align-self property?
 }

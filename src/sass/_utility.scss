@@ -23,6 +23,12 @@
   text-align: end;
 }
 
+.text-justify {
+  text-align:   justify;
+  text-justify: inter-word;     // for IE support
+}
+
+// TODO: achieve full-height via flex grow? (i.e. assuming div inside a flex container & display:column, we set div to flex:1)
 .full-height {
   min-height: 100%;
 }

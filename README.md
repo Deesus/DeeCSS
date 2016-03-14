@@ -1,4 +1,4 @@
-# FlexFramework 0.2.8
+# FlexFramework 0.3.0
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. This project was *almost* entirely created from scratch. 
@@ -55,6 +55,9 @@ FlexFramework/
 #### TODO:
 
 ###### Refactor:
++ [ ] Review TODOs
++ [ ] Wrap selectors inside mixins so that we can import only what we need
++ [ ] Use `ff` or `FF` in naming prefix to clear-up naming conventions
 + [ ] Do we really need `column` selector (width-less grid container)?
 + [x] HTML Boilerplate includes sticky footer wrapper and CSS
 + [ ] Review/revise CSS

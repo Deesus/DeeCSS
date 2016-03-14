@@ -1,3 +1,7 @@
+### 0.3.0
+- Added flex item properties (`align-self`)
+- Added text-justify class
+
 ### 0.2.8
 - Added minified CSS.
 - Renamed public CSS to `flexframework.css`.
