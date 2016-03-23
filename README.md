@@ -1,7 +1,8 @@
-# FlexFramework 0.3.0
+# FlexFramework 0.3.1
 ###### A simple CSS-HTML framework
 
-My custom CSS with the intention of replacing Bootstrap. This project was *almost* entirely created from scratch. 
+My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
+This project was *almost* entirely created from scratch. 
 Main goals: should be veritably responsive; should have a low learning curve; should solve common design issues; should use flexboxes to solve everything.
 
 #### Requirements:

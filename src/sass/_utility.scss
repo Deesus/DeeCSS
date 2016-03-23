@@ -20,6 +20,7 @@
 }
 
 .text-end {
+  text-align: right;            // for IE support (overwritten to `end` on other browsers)
   text-align: end;
 }
 

@@ -1,3 +1,6 @@
+### 0.3.1
+- Added styles for form inputs
+
 ### 0.3.0
 - Added flex item properties (`align-self`)
 - Added text-justify class
