@@ -1,9 +1,12 @@
+### 0.3.2
+- Added Apache license.
+
 ### 0.3.1
-- Added styles for form inputs
+- Added styles for form inputs.
 
 ### 0.3.0
-- Added flex item properties (`align-self`)
-- Added text-justify class
+- Added flex item properties (`align-self`).
+- Added text-justify class.
 
 ### 0.2.8
 - Added minified CSS.

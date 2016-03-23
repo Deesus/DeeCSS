@@ -1,4 +1,4 @@
-# FlexFramework 0.3.1
+# FlexFramework 0.3.2
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
@@ -31,6 +31,7 @@ Main goals: should be veritably responsive; should have a low learning curve; sh
 FlexFramework/
     ├── README.md
     ├── CHANGELOG.md
+    ├── LICENSE
     ├── public/
     │    ├── index.html
     │    ├── stylesheets/
@@ -83,4 +84,4 @@ FlexFramework/
 + [ ] C.f. Gumby, Skeleton, MythJS, and Pure frameworks for additional ideas
 
 #### License:
-Copyright (c) 2016 Dee Reddy.
+Copyright (c) 2016 Dee Reddy. Apache 2 License.
