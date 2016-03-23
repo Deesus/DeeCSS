@@ -1,4 +1,4 @@
-# FlexFramework 0.3.2
+# FlexFramework 0.4.0
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
@@ -37,13 +37,16 @@ FlexFramework/
     │    ├── stylesheets/
     │    │    ├── flexframework.css
     │    │    └── flexframework.min.css
-    │    └── scripts/
-    │          └── scripts.js
+    │    ├── scripts/
+    │    │    └── scripts.js
+    │    └── fonts/
+    │
     └── src/
           ├── config.rb
           ├── sass/
           │    ├── FlexFramework.scss
           │    ├── _flexgrid.scss
+          │    ├── _fonts.scss
           │    ├── _media.scss
           │    ├── _resets.scss 
           │    ├── _typography.scss 
@@ -57,12 +60,11 @@ FlexFramework/
 #### TODO:
 
 ###### Refactor:
-+ [ ] Review TODOs
 + [ ] Wrap selectors inside mixins so that we can import only what we need
 + [ ] Use `ff` or `FF` in naming prefix to clear-up naming conventions
 + [ ] Do we really need `column` selector (width-less grid container)?
 + [x] HTML Boilerplate includes sticky footer wrapper and CSS
-+ [ ] Review/revise CSS
++ [ ] Review and revise TODOs, CSS, and HTML
 
 ###### Documentation:
 + [ ] Add API documentation

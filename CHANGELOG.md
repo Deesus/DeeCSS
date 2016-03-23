@@ -1,3 +1,6 @@
+### 0.4.0
+- Added default fonts (`open sans`).
+
 ### 0.3.2
 - Added Apache license.
 

@@ -241,6 +241,24 @@ ul {
   align-self: stretch;
 }
 
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../public/fonts/OpenSans-Reg.woff");
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../public/fonts/OpenSans-Light.woff");
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../public/fonts/OpenSans-Bold.woff");
+}
 /**************
  Typography:
  **************/
@@ -253,7 +271,7 @@ html {
 body {
   /* using `em` instead of `rem` in body b/c bug in chrome (use `rem` in all other areas) */
   font-size: 1.5em;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
   color: #222;
 }
 

@@ -17,7 +17,7 @@ html {
 body {
   /* using `em` instead of `rem` in body b/c bug in chrome (use `rem` in all other areas) */
   font-size:    1.5em;
-  font-family:  Helvetica, Arial, sans-serif;
+  font-family:  'OpenSans', Helvetica, Arial, sans-serif;
   color:        $black;
   // TODO: specify:
   // line-height

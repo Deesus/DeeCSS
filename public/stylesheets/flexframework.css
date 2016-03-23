@@ -162,31 +162,47 @@ ul {
 }
 
 /**************
- Align Flex Items (i.e. flex utilities):
+ Flex Container properties:
  **************/
-/* main axis: */
-.justify-start {
+/* creates flexbox container horizontal direction */
+.flex-row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+/* creates flexbox container vertical direction */
+.flex-column {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* main axis properties: */
+.justify-start, .justify-content-start {
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
-.justify-end {
+.justify-end, .justify-content-end {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
-.justify-center {
+.justify-center, .justify-content-center {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.justify-space-between {
+.justify-space-between, .justify-content-space-between {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.justify-space-around {
+.justify-space-around, .justify-content-space-around {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
 
-/* cross axis: */
+/* cross axis properties: */
 .align-items-start {
   -webkit-align-items: flex-start;
   align-items: flex-start;
@@ -204,22 +220,45 @@ ul {
   align-items: stretch;
 }
 
-/* creates flexbox container, horizontal direction */
-.flex-row {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+/**************
+ Flex Item properties:
+ **************/
+/* cross axis properties: */
+.align-self-start {
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+}
+.align-self-end {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+}
+.align-self-center {
+  -webkit-align-self: center;
+  align-self: center;
+}
+.align-self-stretch {
+  -webkit-align-self: stretch;
+  align-self: stretch;
 }
 
-/* creates flexbox container, vertical direction */
-.flex-column {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../public/fonts/OpenSans-Reg.woff");
 }
-
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../public/fonts/OpenSans-Light.woff");
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../public/fonts/OpenSans-Bold.woff");
+}
 /**************
  Typography:
  **************/
@@ -232,7 +271,7 @@ html {
 body {
   /* using `em` instead of `rem` in body b/c bug in chrome (use `rem` in all other areas) */
   font-size: 1.5em;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
   color: #222;
 }
 
@@ -345,7 +384,13 @@ h6 {
 }
 
 .text-end {
+  text-align: right;
   text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .full-height {
@@ -388,6 +433,19 @@ button, .button, input[type='button'], input[type='submit'], input[type='reset']
 button:hover, button:focus, .button:hover, .button:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
   border-color: #222;
   color: #333;
+}
+
+/*******************
+ Forms
+ *******************/
+input[type='text'] {
+  border-radius: 4px;
+  height: 2.85rem;
+}
+input[type='text']:focus {
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(116, 194, 255, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(116, 194, 255, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(116, 194, 255, 0.6);
 }
 
 /*******************
