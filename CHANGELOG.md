@@ -1,3 +1,7 @@
+### 0.4.1
+- Refactored form input styles.
+- Using `silver` as standard color (for buttons, input, etc.).
+
 ### 0.4.0
 - Added default fonts (`open sans`).
 
