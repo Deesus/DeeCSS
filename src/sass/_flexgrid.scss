@@ -20,7 +20,7 @@
           box-orient:     horizontal,
           box-direction:  normal
   ));
-  @include flex-wrap(wrap);
+  @include flex-wrap(nowrap);
   margin-left:  0;
   margin-right: 0;
 }

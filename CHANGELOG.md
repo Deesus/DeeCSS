@@ -1,3 +1,6 @@
+### 0.4.2
+- Changed rows' flex-wrap to `nowrap`. Reason: wrapping breaks the purpose of rows. `nowrap` forces elements into a single line.
+
 ### 0.4.1
 - Refactored form input styles.
 - Using `silver` as standard color (for buttons, input, etc.).
