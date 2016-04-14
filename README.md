@@ -1,4 +1,4 @@
-# FlexFramework 0.4.2
+# FlexFramework 0.4.3
 ###### A simple CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
@@ -43,6 +43,8 @@ FlexFramework/
     │
     └── src/
           ├── config.rb
+          ├── scripts/
+          │    └── scripts.js
           ├── sass/
           │    ├── FlexFramework.scss
           │    ├── _flexgrid.scss

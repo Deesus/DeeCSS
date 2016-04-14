@@ -1,3 +1,7 @@
+### 0.4.3
+- added JS boilerplate
+- refactored `::selection` and `box-sizing` as mixins
+
 ### 0.4.2
 - Changed rows' flex-wrap to `nowrap`. Reason: wrapping breaks the purpose of rows. `nowrap` forces elements into a single line.
 
