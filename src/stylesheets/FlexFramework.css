@@ -10,10 +10,14 @@
 }
 
 html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *::before, *::after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -352,14 +356,13 @@ h6 {
   }
 }
 /* Change selection color: */
-::selection {
-  background: #4fc8de;
+*::-moz-selection {
   color: ghostwhite;
+  background-color: #4fc8de;
 }
-
-::-moz-selection {
-  background: #4fc8de;
+*::selection {
   color: ghostwhite;
+  background-color: #4fc8de;
 }
 
 /* removes both padding and margins */
