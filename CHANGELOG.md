@@ -1,9 +1,13 @@
+### 0.4.5
+- Imported normalize.css into main resets.
+- Removed `external` directory.
+
 ### 0.4.4
-- extended responsiveness to `video`, `object`, `embed`
-- added default sizes for 'tap targets'
+- Extended responsiveness to `video`, `object`, `embed`.
+- Added default sizes for 'tap targets'.
 
 ### 0.4.3
-- refactored `::selection` and `box-sizing` as mixins
+- Refactored `::selection` and `box-sizing` as mixins.
 
 ### 0.4.2
 - Changed rows' flex-wrap to `nowrap`. Reason: wrapping breaks the purpose of rows. `nowrap` forces elements into a single line.

@@ -1,5 +1,5 @@
-# FlexFramework 0.4.3
-###### A simple CSS-HTML framework
+# FlexFramework 0.4.5
+###### A modern CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
 This project was *almost* entirely created from scratch. 
@@ -50,13 +50,12 @@ FlexFramework/
           │    ├── _flexgrid.scss
           │    ├── _fonts.scss
           │    ├── _media.scss
+          │    ├── _normalize.scss
           │    ├── _resets.scss 
           │    ├── _typography.scss 
           │    └── _utility.scss 
-          ├── stylesheets/
-          │    └── FlexFramework.css
-          └── external/
-                └── normalize.scss
+          └── stylesheets/
+               └── FlexFramework.css
 ```
 
 #### TODO:
@@ -79,10 +78,6 @@ FlexFramework/
 + [x] Add utility functions
 + [x] Add media queries
 + [ ] Add JS
-
-###### Misc.:
-+ [ ] Include standard dependencies: Modernizr, normalize.css [CSS reset], etc.
-+ [ ] Make responsive
 
 ###### Future:
 + [ ] C.f. Gumby, Skeleton, MythJS, and Pure frameworks for additional ideas

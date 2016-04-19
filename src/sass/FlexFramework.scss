@@ -1,7 +1,9 @@
-/*******************
+/* ==========================================================================
  Author: Dee Reddy (deesus@yandex.com)
- *******************/
-@import "resets",
+========================================================================== */
+
+@import "normalize",
+        "resets",
         "flexgrid",
         "fonts",
         "typography",
@@ -45,6 +47,7 @@ button, .button, input[type='button'], input[type='submit'], input[type='reset']
     color:        #333;
   }
 }
+
 /*******************
  Forms
  *******************/
@@ -58,10 +61,6 @@ input[type='text'] {
     border:   1px solid $form-blue;
   }
 }
-// inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
-/*******************
- Menus
- *******************/
 
 /*******************
  Media queries

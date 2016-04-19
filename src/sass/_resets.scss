@@ -3,12 +3,9 @@
  Resets
  **************/
 
-* {
+html {
   margin:   0;
   padding:  0;
-}
-
-html {
   @include box-sizing(border-box);
 }
 
