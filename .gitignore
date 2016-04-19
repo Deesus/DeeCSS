@@ -1,4 +1,5 @@
-.idea
-.sass-cache
-/src/test
-src/_unimplemented
+.idea/
+.sass-cache/
+TODO.md
+/src/test/
+src/_unimplemented/

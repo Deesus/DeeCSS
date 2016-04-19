@@ -16,7 +16,7 @@ html {
   @include box-sizing(inherit);
 }
 
-img,figure {
+img, embed, object, video, figure {
   /* image automatically resizes to max-width of the boundary: */
   max-width:  100%;
   height:     auto;
@@ -27,4 +27,10 @@ img,figure {
 
 ul {
   list-style: none;
+}
+
+/* tap targets: */
+button, nav a {
+  min-height: 4rem;
+  min-width:  4rem;
 }

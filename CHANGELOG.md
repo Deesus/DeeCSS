@@ -1,5 +1,8 @@
+### 0.4.4
+- extended responsiveness to `video`, `object`, `embed`
+- added default sizes for 'tap targets'
+
 ### 0.4.3
-- added JS boilerplate
 - refactored `::selection` and `box-sizing` as mixins
 
 ### 0.4.2
