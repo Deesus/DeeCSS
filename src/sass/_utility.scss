@@ -33,3 +33,10 @@
 .full-height {
   min-height: 100%;
 }
+
+/* truncates overflowing text in a container; replaces with ellipsis: */
+.truncate {
+  white-space:    nowrap;
+  overflow:       hidden;
+  text-overflow:  ellipsis;
+}
