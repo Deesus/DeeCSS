@@ -1,3 +1,5 @@
+@import "compass";
+
 /* removes both padding and margins */
 .no-gutter, .no-pad-margin {
   padding:  0;
@@ -39,4 +41,17 @@
   white-space:    nowrap;
   overflow:       hidden;
   text-overflow:  ellipsis;
+}
+
+/* for sticky footer, wrap everything but the footer in this selector: */
+#body-wrapper {
+  @include flex(1);
+}
+
+// needed for sticky footer:
+body {
+  @include            display-flex;
+  @include            flex-direction(column);
+  -webkit-box-orient: vertical;
+  min-height:         100vh;
 }

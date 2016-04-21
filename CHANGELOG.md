@@ -1,3 +1,8 @@
+### 0.5.0
+- Restructured Sass: all non-rest styles moved to `_styles.scss` and all API/utility moved to `_utility.scs`.
+- `FlexFramework.scss` is now clean.
+- Added `.truncate`.
+
 ### 0.4.5
 - Imported normalize.css into main resets.
 - Removed `external` directory.

@@ -1,4 +1,4 @@
-# FlexFramework 0.4.5
+# FlexFramework 0.5.0
 ###### A modern CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
@@ -51,7 +51,8 @@ FlexFramework/
           │    ├── _fonts.scss
           │    ├── _media.scss
           │    ├── _normalize.scss
-          │    ├── _resets.scss 
+          │    ├── _resets.scss
+          │    ├── _styles.scss
           │    ├── _typography.scss 
           │    └── _utility.scss 
           └── stylesheets/
