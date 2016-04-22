@@ -1,11 +1,15 @@
 @import 'compass';
+
 /**************
  Resets
  **************/
 
-html {
+body {
   margin:   0;
-  padding:  0;
+  padding:  0;    // if `padding:0` is removed, recognize that normalize will need to be updated as well
+}
+
+html {
   @include box-sizing(border-box);
 }
 
