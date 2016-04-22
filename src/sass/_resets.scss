@@ -4,7 +4,7 @@
  Resets
  **************/
 
-body {
+* {
   margin:   0;
   padding:  0;    // if `padding:0` is removed, recognize that normalize will need to be updated as well
 }
@@ -34,4 +34,13 @@ ul {
 button, nav a {
   min-height: 4rem;
   min-width:  4rem;
+}
+
+table {
+  border-collapse:  collapse;
+  border-spacing:   0;
+
+  // TODO: another solution for responsiveness is make tables vertical w/ media queries:
+  overflow-x:                 auto;
+  -webkit-overflow-scrolling: touch;
 }

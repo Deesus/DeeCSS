@@ -1,3 +1,9 @@
+### 0.5.2
+- Added table resets.
+
+### 0.5.1
+- Added some utility classes.
+
 ### 0.5.0
 - Restructured Sass: all non-rest styles moved to `_styles.scss` and all API/utility moved to `_utility.scs`.
 - `FlexFramework.scss` is now clean.

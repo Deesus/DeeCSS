@@ -230,7 +230,7 @@ textarea {
 /**************
  Resets
  **************/
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -262,6 +262,13 @@ ul {
 button, nav a {
   min-height: 4rem;
   min-width: 4rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /**************
@@ -676,6 +683,20 @@ input[type='text']:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* for sticky footer, wrap everything but the footer in this selector: */
