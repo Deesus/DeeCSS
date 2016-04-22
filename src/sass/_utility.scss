@@ -43,6 +43,20 @@
   text-overflow:  ellipsis;
 }
 
+.visible {
+  visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.img-responsive {
+  max-width:  100%;
+  height:     auto;
+  display:    block;
+}
+
 /* for sticky footer, wrap everything but the footer in this selector: */
 #body-wrapper {
   @include flex(1);
@@ -55,3 +69,4 @@ body {
   -webkit-box-orient: vertical;
   min-height:         100vh;
 }
+
