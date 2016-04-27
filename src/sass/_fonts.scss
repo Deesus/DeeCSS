@@ -1,20 +1,21 @@
+// TODO: change file paths to something less specific
 @font-face {
   font-family:  'OpenSans';
   font-style:   normal;
   font-weight:  400;
-  src:          url('../../public/fonts/OpenSans-Reg.woff');
+  src:          url('../fonts/OpenSans-Reg.woff');
 }
 
 @font-face {
   font-family:  'OpenSans';
   font-style:   normal;
   font-weight:  300;
-  src:          url('../../public/fonts/OpenSans-Light.woff');
+  src:          url('../fonts/OpenSans-Light.woff');
 }
 
 @font-face {
   font-family:  'OpenSans';
   font-style:   normal;
   font-weight:  600;
-  src:          url('../../public/fonts/OpenSans-Bold.woff');
+  src:          url('../fonts/OpenSans-Bold.woff');
 }

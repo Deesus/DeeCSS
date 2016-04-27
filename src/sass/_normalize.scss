@@ -1,10 +1,9 @@
 /**************
- Selected 'resets' from normalize.css
+ Selected resets from `normalize.css`:
  **************/
  // normalize.css v4.1.1 <github.com/necolas/normalize.css>
 
 html {
-  // Prevent adjustments of font size after orientation changes in IE and iOS:
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -63,11 +62,6 @@ abbr[title] {
   border-bottom:    none;
   text-decoration:  underline;
   text-decoration:  underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
 }
 
 dfn {
