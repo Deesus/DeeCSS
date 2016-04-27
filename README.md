@@ -1,4 +1,4 @@
-# FlexFramework 0.5.2
+# FlexFramework 0.5.4
 ###### A modern CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
@@ -32,7 +32,7 @@ FlexFramework/
     ├── README.md
     ├── CHANGELOG.md
     ├── LICENSE
-    ├── public/
+    ├── dist/
     │    ├── index.html
     │    ├── stylesheets/
     │    │    ├── flexframework.css
@@ -42,7 +42,9 @@ FlexFramework/
     │    └── fonts/
     │
     └── src/
+          ├── index.html
           ├── config.rb
+          ├── fonts/
           ├── scripts/
           │    └── scripts.js
           ├── sass/
@@ -56,12 +58,14 @@ FlexFramework/
           │    ├── _typography.scss 
           │    └── _utility.scss 
           └── stylesheets/
-               └── FlexFramework.css
+               ├── FlexFramework.css
+               └── flexframework.min.css
 ```
 
 #### TODO:
 
 ###### Refactor:
++ [ ] To decide: remove all margins/padding with `* {margin:0;padding:0;}` or only remove them for `body`? C.f. resets.
 + [ ] Wrap selectors inside mixins so that we can import only what we need
 + [ ] Use `ff` or `FF` in naming prefix to clear-up naming conventions
 + [ ] Do we really need `column` selector (width-less grid container)?

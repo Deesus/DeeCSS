@@ -1,3 +1,10 @@
+### 0.5.4
+- Minor chors: Renamed folders. Ensured all files in `dist` are in `src`.
+
+### 0.5.3
+- Fixed bug in `normalize.css`: removed `b, strong` styles (was set to `inherit` previously).
+- Fixed minor bug in `_fonts.scss`
+
 ### 0.5.2
 - Added table resets.
 
