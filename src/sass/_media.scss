@@ -1,39 +1,51 @@
 /*******************
- Media queries
+ Break points:
  *******************/
 
 /* Phones */
-@media all and (max-width : 480px) {
+@media screen and (max-width : 480px) {
   // add styles
 }
 
 /* Small Screens: */
-@media all and (min-width: 481px) and (max-width: 769px) {
+@media screen and (min-width: 481px) and (max-width: 769px) {
 
 }
 
 /* Tablets */
-@media all and (min-width : 768px) and (max-width: 1024px) {
+@media screen and (min-width : 768px) and (max-width: 1024px) {
   // add styles
 }
 
 /* Laptops/Desktops: */
-@media all and (min-width: 1224px) {
+@media screen and (min-width: 1224px) {
   // add styles
 }
 
 /* Large Screens: */
-@media all and (min-width : 1824px) {
+@media screen and (min-width : 1824px) {
   // add styles
 }
 
-
-/* Holy Grail Layout -- as according to Mozilla */
+/*******************
+ Holy Grail Layout -- as according to Mozilla:
+ *******************/
 @media screen and (max-width: 640px) {
   // TODO: replace with selector
   .layout {
     @include flex-direction(column);
     @include flexbox((box-orient: vertical));
     order: 0;
+  }
+}
+
+/*******************
+ Small Screens Only
+ *******************/
+@media screen and (max-width: 640px)  {
+  /* tap targets: */
+  button, nav a {
+    min-height: 4rem;
+    min-width:  4rem;
   }
 }

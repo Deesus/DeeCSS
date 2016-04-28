@@ -65,6 +65,8 @@ FlexFramework/
 #### TODO:
 
 ###### Refactor:
++ [x] Change tap targets to only activate on small screens [media queries]
++ [ ] Add media query for `print`
 + [ ] To decide: remove all margins/padding with `* {margin:0;padding:0;}` or only remove them for `body`? C.f. resets.
 + [ ] Wrap selectors inside mixins so that we can import only what we need
 + [ ] Use `ff` or `FF` in naming prefix to clear-up naming conventions
