@@ -1,3 +1,6 @@
+### 0.5.5:
+- Added Gruntfile, package.json.
+
 ### 0.5.4
 - Minor chors: Renamed folders. Ensured all files in `dist` are in `src`.
 
