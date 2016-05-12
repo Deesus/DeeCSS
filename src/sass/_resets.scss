@@ -38,3 +38,10 @@ table {
   overflow-x:                 auto;
   -webkit-overflow-scrolling: touch;
 }
+
+hr {
+  display:    block;
+  height:     1px;
+  border:     0;
+  border-top: 1px solid #ccc;
+}

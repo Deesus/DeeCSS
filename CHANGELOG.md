@@ -1,3 +1,6 @@
+### 0.5.10:
+- Added numerous utilities (e.g. spinner). Fixed bugs.
+
 ### 0.5.5:
 - Added Gruntfile, package.json.
 

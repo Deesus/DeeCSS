@@ -4,9 +4,17 @@
 /**************
  Grid
  **************/
+
+/* creates a container with auto margins (just set the width): */
+.container-fluid {
+  box-sizing:     border-box;
+  margin-right:   auto;
+  margin-left:    auto;
+}
+
 /* container differs from Bootstrap's `container-fluid` in that we don't use auto margins */
 .container {
-  box-sizing: border-box;
+  box-sizing:     border-box;
   // needed to compensate for gutters when the rows wrap:
   padding-right:  2rem;
   padding-left:   2rem;
@@ -16,9 +24,8 @@
   @include display-flex;
   @include flex(0 1 auto);
   @include flex-direction(row);
-  @include flexbox((
-          box-orient:     horizontal,
-          box-direction:  normal
+  @include flexbox((box-orient:     horizontal,
+                    box-direction:  normal
   ));
   @include flex-wrap(nowrap);
   margin-left:  0;

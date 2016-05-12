@@ -2,7 +2,7 @@
  Author: Dee Reddy (deesus@yandex.com)
 ========================================================================== */
 /**************
- Selected 'resets' from normalize.css
+ Selected resets from `normalize.css`:
  **************/
 html {
   -ms-text-size-adjust: 100%;
@@ -62,11 +62,6 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
 }
 
 dfn {
@@ -137,7 +132,7 @@ input,
 optgroup,
 select,
 textarea {
-  font: inherit;
+  font-size: inherit;
   margin: 0;
 }
 
@@ -258,12 +253,6 @@ ul {
   list-style: none;
 }
 
-/* tap targets: */
-button, nav a {
-  min-height: 4rem;
-  min-width: 4rem;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -271,9 +260,23 @@ table {
   -webkit-overflow-scrolling: touch;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
 /**************
  Grid
  **************/
+/* creates a container with auto margins (just set the width): */
+.container-fluid {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* container differs from Bootstrap's `container-fluid` in that we don't use auto margins */
 .container {
   box-sizing: border-box;
@@ -488,19 +491,19 @@ table {
   font-family: 'OpenSans';
   font-style: normal;
   font-weight: 400;
-  src: url("../../public/fonts/OpenSans-Reg.woff");
+  src: url("../fonts/OpenSans-Reg.woff");
 }
 @font-face {
   font-family: 'OpenSans';
   font-style: normal;
   font-weight: 300;
-  src: url("../../public/fonts/OpenSans-Light.woff");
+  src: url("../fonts/OpenSans-Light.woff");
 }
 @font-face {
   font-family: 'OpenSans';
   font-style: normal;
   font-weight: 600;
-  src: url("../../public/fonts/OpenSans-Bold.woff");
+  src: url("../fonts/OpenSans-Bold.woff");
 }
 /**************
  Typography:
@@ -675,7 +678,13 @@ input[type='text']:focus {
 }
 
 .full-height {
-  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.full-width {
+  max-width: 100%;
+  width: 100%;
 }
 
 /* truncates overflowing text in a container; replaces with ellipsis: */
@@ -683,6 +692,10 @@ input[type='text']:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .visible {
@@ -697,6 +710,78 @@ input[type='text']:focus {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* expands container to fill in space */
+.expand, .flex-grow {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+/* spins icons and even fonts (continuous motion): */
+.spinner {
+  -moz-animation: spin 1.5s infinite linear;
+  -webkit-animation: spin 1.5s infinite linear;
+  animation: spin 1.5s infinite linear;
+}
+
+/* spinner in step-wise motion: */
+.spinner-step-8 {
+  -moz-animation: spin 1.5s infinite steps(8);
+  -webkit-animation: spin 1.5s infinite steps(8);
+  animation: spin 1.5s infinite steps(8);
+}
+
+/* spinner that rotates only once (ease-in-out motion): */
+.spin-once {
+  -moz-animation: spin 0.83s 1 ease-in-out;
+  -webkit-animation: spin 0.83s 1 ease-in-out;
+  animation: spin 0.83s 1 ease-in-out;
+}
+
+/* keyframes for animations: */
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* for rounded buttons, form inputs, etc.: */
+.rounded {
+  border-radius: 50px;
+}
+
+/* useful for debugging elements/tags: */
+.debug {
+  border: 2px dashed red;
 }
 
 /* for sticky footer, wrap everything but the footer in this selector: */
@@ -715,14 +800,16 @@ body {
 }
 
 /*******************
- Media queries
+ Break points:
  *******************/
 /* Phones */
 /* Small Screens: */
 /* Tablets */
 /* Laptops/Desktops: */
 /* Large Screens: */
-/* Holy Grail Layout -- as according to Mozilla */
+/*******************
+ Holy Grail Layout -- as according to Mozilla:
+ *******************/
 @media screen and (max-width: 640px) {
   .layout {
     -webkit-flex-direction: column;
@@ -730,5 +817,15 @@ body {
     -webkit-box-orient: vertical;
     box-orient: vertical;
     order: 0;
+  }
+}
+/*******************
+ Small Screens Only
+ *******************/
+@media screen and (max-width: 640px) {
+  /* tap targets: */
+  button, nav a {
+    min-height: 4rem;
+    min-width: 4rem;
   }
 }

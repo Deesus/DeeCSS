@@ -133,7 +133,8 @@ input,
 optgroup,
 select,
 textarea {
-  font:   inherit;
+  // font:   inherit;     // Removed because of issues with <button> elements --
+  font-size: inherit;     // replaced with this property instead.
   margin: 0;
 }
 
