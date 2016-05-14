@@ -2,26 +2,19 @@ module.exports = function(grunt) {
 
     // Task configurations:
     grunt.initConfig({
-        /**
-         * Watch
-         *
-         * A generic watcher. Initiates other grunt tasks when it detects changes to certain files/directories
-         */
+
+        //  Grunt watcher:
         watch: {
             scripts: {
-                files: ["src/sass/*.scss", "src/stylesheets/*.css", "src/scripts/*.js"],    // Only watch these files
-                tasks: ["compass", "copy"],                                                 // What tasks will the watcher run
+                files: ["src/sass/*.scss", "src/stylesheets/*.css", "src/scripts/*.js"],
+                tasks: ["compass"],             // TODO: Add the tasks the watcher will run
                 options: {
                     spawn: true
                 }
             }
         },
-        
-        /**
-         * Compass watcher
-         *
-         * Compiles `.scss` files to `.css` files.
-         */
+
+        // Compass watcher:
         compass: {
             dev: {
                 options: {
@@ -29,22 +22,38 @@ module.exports = function(grunt) {
                     cssDir:         'src/sass_compiled',
                     environment:    'development',
                     config:         'src/config.rb',
-                    watch:          false                // Use `$ grunt watch` instead
+                    watch:          true        // TODO: change to `false` if you want to only compile once
                 }
             }
         },
-        
-        /**
-         * Copy files to dist/
-         *
-         */
+
+        // copies files from `src` to `dist`:
         copy: {
             main: {
                 files: [
-                    // Source-to-destination of files:
-                    {expand: true, src: ['src/stylesheets/*'],  dest: 'public/stylesheets/',    flatten: true, filter: 'isFile'},
-                    {expand: true, src: ['src/scripts/*'],      dest: 'public/scripts/',        flatten: true, filter: 'isFile'}
+                    {expand: true, src: ['src/stylesheets/*'],  dest: 'dist/stylesheets/',  flatten: true, filter: 'isFile'},
+                    {expand: true, src: ['src/scripts/*'],      dest: 'dist/scripts/',      flatten: true, filter: 'isFile'}
                 ]
+            }
+        },
+
+        // minify CSS:
+        cssmin: {
+            my_target: {
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: ['src/stylesheets/*.css'],
+                    dest: 'dist/stylesheets',
+                    ext: '.min.css'
+                }]
+            }
+        },
+
+        // minify JS:
+        uglify: {
+            my_target: {
+                files: {'dist/scripts/scripts.min.js' : 'src/scripts/*.js'}
             }
         }
     });
@@ -54,7 +63,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks("grunt-contrib-compass");
-
-    // Load default tasks (if we want to simply run `$grunt`):
-    grunt.registerTask("default", ["watch"]);
+    grunt.loadNpmTasks("grunt-contrib-uglify");
 };
