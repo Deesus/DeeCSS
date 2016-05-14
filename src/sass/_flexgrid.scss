@@ -128,3 +128,13 @@
   }
   // TODO: similarly, do we need to specify `baseline` for align-self property?
 }
+
+/**************
+ Flex:
+ **************/
+/* expands item relative to other items' flex property */
+@for $i from 0 through 12 {
+  .flex-#{$i} {
+    @include flex($i);
+  }
+}

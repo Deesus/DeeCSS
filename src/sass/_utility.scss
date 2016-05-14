@@ -68,11 +68,6 @@
   display:    block;
 }
 
-/* expands container to fill in space */
-.expand, .flex-grow {
-  @include flex-grow(1);
-}
-
 /* spins icons and even fonts (continuous motion): */
 .spinner {
   @include animation(spin 1.5s infinite linear);
