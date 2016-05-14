@@ -1,4 +1,4 @@
-# FlexFramework 0.5.11
+# FlexFramework 0.6.0
 ###### A modern CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
@@ -65,6 +65,7 @@ FlexFramework/
 #### TODO:
 
 ###### Refactor:
++ [ ] Change 'Open Sans' font-face: use CDN source; revise code.
 + [x] Change tap targets to only activate on small screens [media queries]
 + [ ] Add media query for `print`
 + [ ] To decide: remove all margins/padding with `* {margin:0;padding:0;}` or only remove them for `body`? C.f. resets.

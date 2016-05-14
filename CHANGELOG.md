@@ -1,5 +1,8 @@
+### 0.6.0:
+- Added `.flex-` classes which add another way of structuring elements in a row/column.
+
 ### 0.5.11:
-- Revise tasks. Reformat boilerplate.
+- Revise tasks. Reformat boilerplate. Renamed files.
 
 ### 0.5.10:
 - Added numerous utilities (e.g. spinner). Fixed bugs.
