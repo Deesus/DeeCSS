@@ -1,3 +1,6 @@
+### 0.5.11:
+- Revise tasks. Reformat boilerplate.
+
 ### 0.5.10:
 - Added numerous utilities (e.g. spinner). Fixed bugs.
 

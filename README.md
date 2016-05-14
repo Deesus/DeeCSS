@@ -1,4 +1,4 @@
-# FlexFramework 0.5.10
+# FlexFramework 0.5.11
 ###### A modern CSS-HTML framework
 
 My custom CSS with the intention of replacing Bootstrap. [My website](http://deesus.github.io/) makes extensive use of FlexFramework and demonstrates what can be achieved with it.
@@ -70,7 +70,6 @@ FlexFramework/
 + [ ] To decide: remove all margins/padding with `* {margin:0;padding:0;}` or only remove them for `body`? C.f. resets.
 + [ ] Wrap selectors inside mixins so that we can import only what we need
 + [x] HTML Boilerplate includes sticky footer wrapper and CSS
-+ [ ] Review and revise TODOs, CSS, and HTML
 + [ ] Organize sections -- esp. grouping related CSS classes more conspicuously
 
 ###### Documentation:

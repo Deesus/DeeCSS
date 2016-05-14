@@ -32,7 +32,8 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     {expand: true, src: ['src/stylesheets/*'],  dest: 'dist/stylesheets/',  flatten: true, filter: 'isFile'},
-                    {expand: true, src: ['src/scripts/*'],      dest: 'dist/scripts/',      flatten: true, filter: 'isFile'}
+                    {expand: true, src: ['src/scripts/*'],      dest: 'dist/scripts/',      flatten: true, filter: 'isFile'},
+                    {expand: true, src: ['src/index.html'],     dest: 'dist',               flatten: true, filter: 'isFile'}
                 ]
             }
         },
@@ -64,4 +65,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks("grunt-contrib-compass");
     grunt.loadNpmTasks("grunt-contrib-uglify");
+    
+    // Register default:
+    grunt.registerTask("default", ["cssmin", "uglify", "copy"]);
 };
