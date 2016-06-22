@@ -1,3 +1,6 @@
+### 0.6.1:
+- Added `clearfix` class. Minor adjustments.
+
 ### 0.6.0:
 - Added `.flex-` classes which add another way of structuring elements in a row/column.
 

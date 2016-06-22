@@ -104,6 +104,19 @@
   border: 2px dashed red;
 }
 
+/* the same clearfix hack found in Bootstrap -- resets float */
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    display:      table;
+    content:      "";
+    line-height:  0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 /* for sticky footer, wrap everything but the footer in this selector: */
 #body-wrapper {
   @include flex(1);

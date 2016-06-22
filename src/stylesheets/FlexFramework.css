@@ -236,7 +236,7 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*, *:before, *:after {
   -moz-box-sizing: inherit;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -265,6 +265,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
+  max-width: 100%;
 }
 
 /**************
@@ -579,7 +580,7 @@ hr {
  **************/
 /* NOT pure black */
 html {
-  /* 1rem = 10px for easy calculations (e.g. 3rem = 30px): */
+  /* font-size set to 62.5% so that 1rem = 10px for easy calculations (e.g. 3rem = 30px): */
   font-size: 62.5%;
 }
 
@@ -845,6 +846,19 @@ input[type='text']:focus {
 /* useful for debugging elements/tags: */
 .debug {
   border: 2px dashed red;
+}
+
+/* the same clearfix hack found in Bootstrap -- resets float */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
 }
 
 /* for sticky footer, wrap everything but the footer in this selector: */
