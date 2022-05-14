@@ -90,4 +90,4 @@ FlexFramework/
 + [ ] C.f. Gumby, Skeleton, and Pure frameworks for additional ideas
 
 #### License:
-Copyright (c) 2016 Dee Reddy. Apache 2 License.
+Copyright (c) 2016 Deepankara Reddy. Apache 2 License.
